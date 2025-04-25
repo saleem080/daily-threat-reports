@@ -1,32 +1,26 @@
-# Satori Threat Intelligence Alert: Scallywag Extensions Monetize Piracy
+Satori Threat Intelligence Alert: Scallywag Extensions Monetize Piracy
 
-**WHAT:**  
-The Scallywag campaign exploits digital piracy and URL-shortening services to orchestrate large-scale ad fraud through custom WordPress extensions. Threat actors use these tools to redirect users through multiple cashout sites filled with ads, employing tactics like forced wait times, CAPTCHA challenges, and deep linking to manipulate traffic and cloak the original referrer.
+WHAT: The Scallywag campaign exploits digital piracy and URL-shortening services to orchestrate large-scale ad fraud through custom WordPress extensions. Threat actors use these tools to redirect users through multiple cashout sites filled with ads, employing tactics like forced wait times, CAPTCHA challenges, and deep linking to manipulate traffic and cloak the source.
 
-**WHEN:**  
-Reported publicly on April 21, 2025.
+WHEN: Posted on April 21, 2025
 
-**HOW:**  
-- User entry points begin at piracy catalog or URL-shortening websites, where users click links promising pirated or shortened content.
-- Deep linking is used to embed webform parameters that trigger ad-heavy versions of cashout sites upon arrival.
-- Open redirectors (e.g., Google, X/Twitter) are exploited to mask the original referrer and make traffic appear organic to ad networks.
-- Scallywag modules are installed on WordPress sites to easily deploy these redirect chains at scale.
-- Users are funneled through multiple intermediary “cashout” pages packed with ads before reaching the promised content.
-- Monetization is achieved by requiring users to:
-  - Click buttons to proceed
-  - Solve CAPTCHAs
-  - Wait for hard-coded timers to expire
-  - Scroll or navigate through multiple intermediary pages
-- Custom WordPress extensions involved include Soralink, Yu Idea, WPSafeLink, and Droplink (the latter distributed exclusively via Scallywag cashout paths).
-- Intermediate cashout websites fall under the "Undisclosed Use of Incentives" category in the Invalid Traffic (IVT) Taxonomy, as users only visit these pages to access pirated content.
-- Fraud scale: 1.4 billion fake ad requests daily across 407 domains, prior to mitigation efforts that reduced volume by 95%.
+HOW:
+•	User entry point begins at piracy catalog or URL-shortening websites, where users click on links promising pirated or shortened content.
+•	Deep linking is used in these links, embedding webform parameters that trigger the decloaked (ad-heavy) versions of cashout sites upon arrival.
+•	Open redirectors (e.g., Google, X/Twitter) are exploited in redirection chains to mask the original referrer and make traffic appear organic to ad networks.
+•	Scallywag modules are installed on WordPress sites to enable threat actors to deploy these redirect chains easily and at scale.
+•	Users are funneled through multiple intermediary “cashout” pages packed with ads, before reaching the promised destination (pirated content or a shortened URL).
+•	Monetization is achieved through required actions such as:
+  o	Clicking buttons to proceed.
+  o	Solving CAPTCHAs.
+  o	Waiting out hard-coded timers.
+  o	Scrolling or navigating through multiple intermediary pages.
+•	Custom WordPress extensions involved: Soralink, Yu Idea, WPSafeLink, and Droplink; the last being freely distributed only through Scallywag cashout paths.
+•	The intermediate cashout websites fall under the category of Undisclosed Use of Incentives in the IVT Taxonomy, as users only visit these sites with the intention of moving on to the pirated content.
+•	Fraud scale reached 1.4 billion fake ad requests daily across 407 domains, before HUMAN mitigations reduced volume by 95%.
 
-**RECOMMENDATIONS:**  
-Organizations and advertising platforms should implement robust ad fraud detection mechanisms that extend beyond static blocklists. Focus should be placed on behavioral analysis to detect cloaking, domain rotation, and anomalous traffic patterns.  
-Platforms should:
-- Monitor referrer data closely
-- Block traffic routed through known open redirectors
-- Audit partnerships and advertising channels regularly to ensure transparency and prevent revenue leakage to fraudulent intermediaries.
+RECOMMENDATIONS: It is reccomended organizations and ad platforms implement robust ad fraud detection mechanisms that go beyond static blocklists, focusing instead on behavioral analysis to identify cloaking, domain rotation, and anomalous traffic patterns. Platforms should closely monitor referrer data, block traffic routed through known open redirectors, and scrutinize monetization attempts from piracy-linked sources. Additionally, we advise regularly auditing partnerships and advertising channels to ensure transparency and prevent revenue leakage to fraudulent intermediaries like those enabled by Scallywag extensions.
 
-**Sources:**  
-- Public Threat Intelligence Feeds (e.g., Human Security
+REFERENCES:
+- HUMAN Security. "Satori Disruption: Scallywag" – [https://www.humansecurity.com/learn/blog/satori-disruption-scallywag/](https://www.humansecurity.com/learn/blog/satori-disruption-scallywag/)
+- SC World. "Massive Scallywag Ad Fraud Campaign Combated" – [https://www.scworld.com/brief/massive-scallywag-ad-fraud-campaign-combated](https://www.scworld.com/brief/massive-scallywag-ad-fraud-campaign-combated)
