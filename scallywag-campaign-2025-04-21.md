@@ -11,7 +11,7 @@ HOW:
 -	Scallywag modules are installed on WordPress sites to enable threat actors to deploy these redirect chains easily and at scale.
 -	Users are funneled through multiple intermediary “cashout” pages packed with ads, before reaching the promised destination (pirated content or a shortened URL).
 -	Monetization is achieved through required actions such as:
-  -	Clicking buttons to proceed.
+-    Clicking buttons to proceed.
   -	Solving CAPTCHAs.
   -	Waiting out hard-coded timers.
   -	Scrolling or navigating through multiple intermediary pages.
