@@ -13,8 +13,8 @@ HOW:
 -	Monetization is achieved through required actions such as:
     -  Clicking buttons to proceed.
     -  Solving CAPTCHAs.
-  -	Waiting out hard-coded timers.
-  -	Scrolling or navigating through multiple intermediary pages.
+     - Waiting out hard-coded timers.
+       -Scrolling or navigating through multiple intermediary pages.
 -	Custom WordPress extensions involved: Soralink, Yu Idea, WPSafeLink, and Droplink; the last being freely distributed only through Scallywag cashout paths.
 -	The intermediate cashout websites fall under the category of Undisclosed Use of Incentives in the IVT Taxonomy, as users only visit these sites with the intention of moving on to the pirated content.
 -	Fraud scale reached 1.4 billion fake ad requests daily across 407 domains, before HUMAN mitigations reduced volume by 95%.
